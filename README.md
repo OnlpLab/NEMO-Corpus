@@ -6,7 +6,7 @@ We publish the NEMO corpus in the TACL paper *Neural Modeling for Named Entities
 1. Morpheme, token-single and token-multi sequence labels. Morpheme labels provide exact boundaries, token-multi provide partial sub-word morphological but no exact boundaries, token-single provides only token-level information. 
 1. All annotations are in `BIOSE` format (`B`=Begin, `I`=Inside, `O`=Outside, `S`=Singleton, `E`=End).
 1. Widely-used OntoNotes entity category set: `GPE` (geo-political entity), `PER` (person), `LOC` (location), `ORG` (organization), `FAC` (facility), `EVE` (event), `WOA` (work-of-art), `ANG` (language), `DUC` (product).
-1. NEMO includes NER annotations for the two major versions of the Hebrew Treebank, UD (Universal Dependency) and SPMRL. These can be aligned to the other morphosyntactic information layers of the treebank using [bclm](https://github.com/cjer/bclm)
+1. NEMO includes NER annotations for the two major versions of the Hebrew Treebank, UD (Universal Dependency) and SPMRL. These can be aligned to the other morphosyntactic information layers of the treebank using [bclm](https://github.com/OnlpLab/bclm)
 1. Nested mentions. (Only the first, widest, layer is used in the NEMO² paper [1])
 1. Guidelines used for annotation are provided (further guideline clarifications will be added soon, as well as a Data Statement).
 1. Corpus was annotated by two native Hebrew speakers of academic education, and curated by the project manager.
@@ -23,7 +23,7 @@ We publish the NEMO corpus in the TACL paper *Neural Modeling for Named Entities
 
 ## Aligned Treenbank Versions
  
-The NEMO corpus matches the treebank version of [bclm v.1.0.0](https://github.com/cjer/bclm/releases/tag/v1.0.0-alpha).
+The NEMO corpus matches the treebank version of [bclm v.1.0.0](https://github.com/OnlpLab/bclm/releases/tag/v1.0.0-alpha).
 This version is based on the [HTB UD v2.2](https://github.com/UniversalDependencies/UD_Hebrew-HTB/releases/tag/r2.2) and the latest SPMRL HTB version. 
 The changes contain (but might not be limited to the following):
 1. Flagged and dropped duplicate and leaking sentences (between train and test). In addition to the sentences already removed in the bclm v1.0.0 HTB version, the following duplicate sentences were dropped as well (SPMRL sentence IDs): 5438, 5444, 5445, 5446, 5448, 5449, 5450, 5451, 5453, 5459 (in the bclm dataframes, these are marked in the `duplicate_sent_id` column).
