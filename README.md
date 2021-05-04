@@ -13,7 +13,7 @@ We publish the NEMO corpus in the TACL paper *Neural Modeling for Named Entities
 1. Annotation was performed using [WebAnno](https://webanno.github.io/webanno/) (version 3.4.5)
 
 
-## Legend for Files
+## Legend for Files and Folder Structure
 1. The two main data folders are `ud` and `spmrl`, corresponding to the relevant Hebrew Treebank corpus. 
 1. Both contain a `gold` folder of gold curated annotations. 
 1. Each `gold` folder contains files for the three variants (morph, token-multi, token-single) for each of the treebank splits (train,dev,test).
