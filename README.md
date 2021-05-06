@@ -21,6 +21,9 @@ We publish the NEMO corpus in the TACL paper [*Neural Modeling for Named Entitie
 1. The `ud` folder also contains an `ab_annotators` folder, which contain the original annotations made by each annotator (labelled `a`, `b`).
 
 
+## Basic Corpus Statistics
+
+
 ## Aligned Treenbank Versions
  
 The NEMO corpus matches the treebank version of [bclm v.1.0.0](https://github.com/OnlpLab/bclm/releases/tag/v1.0.0-alpha).
