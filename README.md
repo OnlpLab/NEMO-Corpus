@@ -1,6 +1,6 @@
 # 🐠 NEMO - The Hebrew Named Entities and Morphology Corpus
 Named Entity (NER) annotations of the Hebrew Treebank (Haaretz newspaper) corpus, including: morpheme and token level NER labels, nested mentions, and more.  
-We publish the NEMO corpus in the TACL paper *Neural Modeling for Named Entities and Morphology (NEMO<sup>2</sup>)* [1], where we use it in extensive experiments and analyses, showing the importance of morphological boundaries for neural modeling of NER in morphologically rich languages. Code for these models and experiments can be found in the [NEMO code repo](https://github.com/OnlpLab/NEMO).
+We publish the NEMO corpus in the TACL paper [*Neural Modeling for Named Entities and Morphology (NEMO<sup>2</sup>)*](https://arxiv.org/abs/2007.15620) [1], where we use it in extensive experiments and analyses, showing the importance of morphological boundaries for neural modeling of NER in morphologically rich languages. Code for these models and experiments can be found in the [NEMO code repo](https://github.com/OnlpLab/NEMO).
 
 ## Main features:
 1. Morpheme, token-single and token-multi sequence labels. Morpheme labels provide exact boundaries, token-multi provide partial sub-word morphological but no exact boundaries, token-single provides only token-level information. 
