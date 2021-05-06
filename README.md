@@ -1,13 +1,13 @@
 # 🐠 NEMO - The Hebrew Named Entities and Morphology Corpus
 Named Entity (NER) annotations of the Hebrew Treebank (Haaretz newspaper) corpus, including: morpheme and token level NER labels, nested mentions, and more.  
-We publish the NEMO corpus in the TACL paper *Neural Modeling for Named Entities and Morphology (NEMO²)* [1], where we use it in extensive experiments and analyses, showing the importance of morphological boundaries for neural modeling of NER in morphologically rich languages. Code for these models and experiments can be found in the [NEMO code repo](https://github.com/OnlpLab/NEMO).
+We publish the NEMO corpus in the TACL paper *Neural Modeling for Named Entities and Morphology (NEMO<sup>2</sup>)* [1], where we use it in extensive experiments and analyses, showing the importance of morphological boundaries for neural modeling of NER in morphologically rich languages. Code for these models and experiments can be found in the [NEMO code repo](https://github.com/OnlpLab/NEMO).
 
 ## Main features:
 1. Morpheme, token-single and token-multi sequence labels. Morpheme labels provide exact boundaries, token-multi provide partial sub-word morphological but no exact boundaries, token-single provides only token-level information. 
 1. All annotations are in `BIOSE` format (`B`=Begin, `I`=Inside, `O`=Outside, `S`=Singleton, `E`=End).
 1. Widely-used OntoNotes entity category set: `GPE` (geo-political entity), `PER` (person), `LOC` (location), `ORG` (organization), `FAC` (facility), `EVE` (event), `WOA` (work-of-art), `ANG` (language), `DUC` (product).
 1. NEMO includes NER annotations for the two major versions of the Hebrew Treebank, UD (Universal Dependency) and SPMRL. These can be aligned to the other morphosyntactic information layers of the treebank using [bclm](https://github.com/OnlpLab/bclm)
-1. Nested mentions. (Only the first, widest, layer is used in the NEMO² paper [1])
+1. Nested mentions. (Only the first, widest, layer is used in the NEMO<sup>2</sup> paper [1])
 1. Guidelines used for annotation are provided.
 1. Corpus was annotated by two native Hebrew speakers of academic education, and curated by the project manager.
 1. Annotation was performed using [WebAnno](https://webanno.github.io/webanno/) (version 3.4.5)
@@ -17,7 +17,7 @@ We publish the NEMO corpus in the TACL paper *Neural Modeling for Named Entities
 1. The two main data folders are `ud` and `spmrl`, corresponding to the relevant Hebrew Treebank corpus. 
 1. Both contain a `gold` folder of gold curated annotations. 
 1. Each `gold` folder contains files for the three variants (morph, token-multi, token-single) for each of the treebank splits (train,dev,test).
-1. Each `gold` folder also contains a `nested` subfolder, which contains all layers of nested mentions (the first layer is the layer used in the non-nested files, and in the NEMO² paper [1])
+1. Each `gold` folder also contains a `nested` subfolder, which contains all layers of nested mentions (the first layer is the layer used in the non-nested files, and in the NEMO<sup>2</sup> paper [1])
 1. The `ud` folder also contains an `ab_annotators` folder, which contain the original annotations made by each annotator (labelled `a`, `b`).
 
 
@@ -48,7 +48,7 @@ spdf = spdf[(~spdf.sent_id.isin(dropped))] # remove extra duplicates
 ## Citations
 
 ##### [1]
-If you use the NEMO corpus in your research, please cite the NEMO² paper:
+If you use the NEMO corpus in your research, please cite the NEMO<sup>2</sup> paper:
 ```bibtex
 @article{DBLP:journals/corr/abs-2007-15620,
   author    = {Dan Bareket and
