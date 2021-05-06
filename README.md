@@ -7,7 +7,7 @@ We publish the NEMO corpus in the TACL paper [*Neural Modeling for Named Entitie
 1. All annotations are in `BIOSE` format (`B`=Begin, `I`=Inside, `O`=Outside, `S`=Singleton, `E`=End).
 1. Widely-used OntoNotes entity category set: `GPE` (geo-political entity), `PER` (person), `LOC` (location), `ORG` (organization), `FAC` (facility), `EVE` (event), `WOA` (work-of-art), `ANG` (language), `DUC` (product).
 1. NEMO includes NER annotations for the two major versions of the Hebrew Treebank, UD (Universal Dependency) and SPMRL. These can be aligned to the other morphosyntactic information layers of the treebank using [bclm](https://github.com/OnlpLab/bclm)
-1. Nested mentions. (Only the first, widest, layer is used in the NEMO<sup>2</sup> paper [1], we invite you to take this challenge up!)
+1. We provide nested mentions. Only the first, widest, layer is used in the NEMO<sup>2</sup> paper. We invite you to take on this challenge!
 1. Guidelines used for annotation are provided.
 1. Corpus was annotated by two native Hebrew speakers of academic education, and curated by the project manager. We provide the original annotations made by the annotators as well to promote work on [learning with disagreements](https://sites.google.com/view/semeval2021-task12/home).
 1. Annotation was performed using [WebAnno](https://webanno.github.io/webanno/) (version 3.4.5)
