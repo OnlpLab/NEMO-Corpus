@@ -7,9 +7,9 @@ We publish the NEMO corpus in the TACL paper [*Neural Modeling for Named Entitie
 1. All annotations are in `BIOSE` format (`B`=Begin, `I`=Inside, `O`=Outside, `S`=Singleton, `E`=End).
 1. Widely-used OntoNotes entity category set: `GPE` (geo-political entity), `PER` (person), `LOC` (location), `ORG` (organization), `FAC` (facility), `EVE` (event), `WOA` (work-of-art), `ANG` (language), `DUC` (product).
 1. NEMO includes NER annotations for the two major versions of the Hebrew Treebank, UD (Universal Dependency) and SPMRL. These can be aligned to the other morphosyntactic information layers of the treebank using [bclm](https://github.com/OnlpLab/bclm)
-1. Nested mentions. (Only the first, widest, layer is used in the NEMO<sup>2</sup> paper [1])
+1. Nested mentions. (Only the first, widest, layer is used in the NEMO<sup>2</sup> paper [1], we invite you to take this challenge up!)
 1. Guidelines used for annotation are provided.
-1. Corpus was annotated by two native Hebrew speakers of academic education, and curated by the project manager.
+1. Corpus was annotated by two native Hebrew speakers of academic education, and curated by the project manager. We provide the original annotations made by the annotators as well to promote work on [learning with disagreements](https://sites.google.com/view/semeval2021-task12/home).
 1. Annotation was performed using [WebAnno](https://webanno.github.io/webanno/) (version 3.4.5)
 
 
@@ -22,6 +22,23 @@ We publish the NEMO corpus in the TACL paper [*Neural Modeling for Named Entitie
 
 
 ## Basic Corpus Statistics
+
+|                              | train        | dev          | test          |
+|------------------------------|           --:|           --:|            --:|
+|  Sentences                   |  4,937       |  500         |  706          |
+|  Tokens                      |  93,504      |  8,531       |  12,619       |
+|  Morphemes                   |  127,031     |  11,301      |  16,828       |
+|  All mentions                |  6,282       |  499         |  932          |
+|  Type: Person         (PER)  |  2,128       |  193         |  267          |
+|  Type: Organization   (ORG)  |  2,043       |  119         |  408          |
+|  Type: Geo-Political  (GPE)  |  1,377       |  121         |  195          |
+|  Type: Location       (GPE)  |  331         |  28          |  41           |
+|  Type: Facility       (FAC)  |  163         |  12          |  11           |
+|  Type: Work-of-Art    (WOA)  |  114         |  9           |  6            |
+|  Type: Event          (EVE)  |  57          |  12          |  0            |
+|  Type: Product        (DUC)  |  36          |  2           |  3            |
+|  Type: Language       (ANG)  |  33          |  3           |  1            |
+
 
 
 ## Aligned Treenbank Versions
