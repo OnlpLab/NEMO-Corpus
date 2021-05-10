@@ -33,7 +33,7 @@ We publish the NEMO corpus in the TACL paper [*"Neural Modeling for Named Entiti
 |  Type: Person         (PER)  |  2,128       |  193         |  267          |
 |  Type: Organization   (ORG)  |  2,043       |  119         |  408          |
 |  Type: Geo-Political  (GPE)  |  1,377       |  121         |  195          |
-|  Type: Location       (GPE)  |  331         |  28          |  41           |
+|  Type: Location       (LOC)  |  331         |  28          |  41           |
 |  Type: Facility       (FAC)  |  163         |  12          |  11           |
 |  Type: Work-of-Art    (WOA)  |  114         |  9           |  6            |
 |  Type: Event          (EVE)  |  57          |  12          |  0            |
