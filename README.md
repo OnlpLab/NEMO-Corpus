@@ -20,6 +20,7 @@ We publish the NEMO corpus in the TACL paper [*"Neural Modeling for Named Entiti
 1. Each `gold` folder contains files of the three input-output variants (morph, token-multi, token-single), for each of the treebank splits (train,dev,test).
 1. Each `gold` folder also contains a `nested`  subfolder ([spmrl/nested](./data/spmrl/gold/nested/), [ud/nested](./data/ud/gold/nested/)), which contains all layers of nested mentions (the first layer is the layer used in the non-nested files, and in the NEMO<sup>2</sup> paper [1])
 1. The `ud` folder also contains an [ab_annotators](./data/ud/ab_annotators/) folder. This folder contains the original annotations made by each annotator (named `a`, `b`), including first-layer and nested annotatations.
+1. *\*UPDATE 2021-09-06\** `ud` folder now contains a [pilot_annotations](./data/ud/pilot_annotations/) folder. This folder contains the original annotations made by each annotator in our two phase pilot (phase I - sentences 1-200 of dev; phase II - sentences 201-400 of dev).
 
 
 ## Basic Corpus Statistics
