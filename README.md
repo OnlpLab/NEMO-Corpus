@@ -1,7 +1,7 @@
 # 🐠 NEMO-Corpus - The Hebrew Named Entities and Morphology Corpus
 
 Named Entity (NER) annotations of the Hebrew Treebank (Haaretz newspaper) corpus, including: morpheme and token level NER labels, nested mentions, and more.  
-We publish the NEMO corpus in the TACL paper [*"Neural Modeling for Named Entities and Morphology (NEMO<sup>2</sup>)"*](https://arxiv.org/abs/2007.15620) [1], where we use it in extensive experiments and analyses, showing the importance of morphological boundaries for neural modeling of NER in morphologically rich languages. Code for these models and experiments can be found in the [NEMO code repo](https://github.com/OnlpLab/NEMO).
+We publish the NEMO corpus in the TACL paper [*"Neural Modeling for Named Entities and Morphology (NEMO<sup>2</sup>)"*](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00404/107206/Neural-Modeling-for-Named-Entities-and-Morphology) [1], where we use it in extensive experiments and analyses, showing the importance of morphological boundaries for neural modeling of NER in morphologically rich languages. Code for these models and experiments can be found in the [NEMO code repo](https://github.com/OnlpLab/NEMO).
 
 ## Main features:
 1. Morpheme, token-single and token-multi sequence labels. Morpheme labels provide exact boundaries, token-multi provide partial sub-word morphological but no exact boundaries, token-single provides only token-level information. 
@@ -76,19 +76,19 @@ An evaluation script is provided in the [NEMO code repo](https://github.com/Onlp
 ##### [1]
 If you use the NEMO corpus in your research, please cite the NEMO<sup>2</sup> paper:
 ```bibtex
-@article{DBLP:journals/corr/abs-2007-15620,
-  author    = {Dan Bareket and
-               Reut Tsarfaty},
-  title     = {Neural Modeling for Named Entities and Morphology (NEMO{\^{}}2)},
-  journal   = {CoRR},
-  volume    = {abs/2007.15620},
-  year      = {2020},
-  url       = {https://arxiv.org/abs/2007.15620},
-  archivePrefix = {arXiv},
-  eprint    = {2007.15620},
-  timestamp = {Mon, 03 Aug 2020 14:32:13 +0200},
-  biburl    = {https://dblp.org/rec/journals/corr/abs-2007-15620.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+@article{10.1162/tacl_a_00404,
+    author = {Bareket, Dan and Tsarfaty, Reut},
+    title = "{Neural Modeling for Named Entities and Morphology (NEMO2)}",
+    journal = {Transactions of the Association for Computational Linguistics},
+    volume = {9},
+    pages = {909-928},
+    year = {2021},
+    month = {09},
+    abstract = "{Named Entity Recognition (NER) is a fundamental NLP task, commonly formulated as classification over a sequence of tokens. Morphologically rich languages (MRLs) pose a challenge to this basic formulation, as the boundaries of named entities do not necessarily coincide with token boundaries, rather, they respect morphological boundaries. To address NER in MRLs we then need to answer two fundamental questions, namely, what are the basic units to be labeled, and how can these units be detected and classified in realistic settings (i.e., where no gold morphology is available). We empirically investigate these questions on a novel NER benchmark, with parallel token- level and morpheme-level NER annotations, which we develop for Modern Hebrew, a morphologically rich-and-ambiguous language. Our results show that explicitly modeling morphological boundaries leads to improved NER performance, and that a novel hybrid architecture, in which NER precedes and prunes morphological decomposition, greatly outperforms the standard pipeline, where morphological decomposition strictly precedes NER, setting a new performance bar for both Hebrew NER and Hebrew morphological decomposition tasks.}",
+    issn = {2307-387X},
+    doi = {10.1162/tacl_a_00404},
+    url = {https://doi.org/10.1162/tacl\_a\_00404},
+    eprint = {https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl\_a\_00404/1962472/tacl\_a\_00404.pdf},
 }
 ```
 
