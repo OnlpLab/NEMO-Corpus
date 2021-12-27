@@ -46,7 +46,7 @@ We publish the NEMO corpus in the TACL paper [*"Neural Modeling for Named Entiti
 ## Aligned Treenbank Versions
  
 The NEMO corpus matches the treebank version of [bclm v.1.0.0](https://github.com/OnlpLab/bclm/releases/tag/v1.0.0-alpha).
-This version is based on the [HTB UD v2.2](https://github.com/UniversalDependencies/UD_Hebrew-HTB/releases/tag/r2.2) and the latest SPMRL HTB version. 
+This version is based on the [HTB UD v2.2](https://github.com/UniversalDependencies/UD_Hebrew-HTB/releases/tag/r2.2) and the [latest SPMRL HTB version](https://github.com/OnlpLab/HebrewResources/tree/102674bb030f5836e1ab827feb63954ad7a6f8fe/HebrewTreebank/hebtb). 
 The changes contain (but might not be limited to the following):
 1. Flagged and dropped duplicate and leaking sentences (between train and test). In addition to the sentences already removed in the bclm v1.0.0 HTB version, the following duplicate sentences were dropped as well (SPMRL sentence IDs): 5438, 5444, 5445, 5446, 5448, 5449, 5450, 5451, 5453, 5459 (in the bclm dataframes, these are marked in the `duplicate_sent_id` column).
 To read the treebank (UD/SPMRL) in a way that matches the NEMO corpus, you can use the following:
